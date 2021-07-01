@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Simple House - About Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" />
+    <link href="css/all.min.css" rel="stylesheet" />
+	<link href="css/templatemo-style.css" rel="stylesheet" />
+</head>
+<!--
+
+Simple House
+
+https://templatemo.com/tm-539-simple-house
+
+-->
+<body > 
+
+	<div class="container">
+		<!-- Top box -->
+			<!-- Logo & Site Name -->
+			<div class="placeholder">
+				<div class="parallax-window" data-parallax="scroll" data-image-src="img/covid.jpg">
+					<div class="tm-header">
+						<div class="row tm-header-inner">
+							<div class="col-md-6 col-12">
+								<img src="img/logo.png" alt="Logo" class="tm-site-logo" /> 
+								<div class="tm-site-text-box">
+									<h1 class="tm-site-title"> COVID-19</h1>
+									<h6 class="tm-site-description"> Informative Dashboard</h6>	
+								</div>
+							</div>
+							<nav class="col-md-6 col-12 tm-nav">
+								<ul class="tm-nav-ul">
+									<li class="tm-nav-li"><a href="index.html" class="tm-nav-link ">Home</a></li>
+									<li class="tm-nav-li"><a href="about.html" class="tm-nav-link active">About</a></li>
+									<li class="tm-nav-li"><a href="contact.html" class="tm-nav-link ">Contact</a></li>
+								</ul>
+							</nav>	
+						</div>
+					</div>
+				</div>
+			</div>
+
+		<main>
+			<header class="row tm-welcome-section">
+				<h2 class="col-12 text-center tm-section-title">About Corona</h2>
+				<p class="col-12 text-center">Coronaviruses (CoV) are a large family of viruses that cause illness ranging from the common cold to more severe diseases such as Middle East Respiratory Syndrome (MERS-CoV) and Severe Acute Respiratory Syndrome (SARS-CoV). A novel coronavirus (nCoV) is a new strain that has not been previously identified in humans.</p>
+			</header>
+
+			<div>
+				<div class="row">
+					<article class="col-lg-6">
+						<script>
+							window.onload = function  () {
+								
+							var chart = new CanvasJS.Chart("chartContainer", {
+								animationEnabled: true,
+								
+								title:{
+									text:"Corona patients in Districts"
+								},
+								axisX:{
+									interval: 1
+								},
+								
+								data: [{
+									type: "bar",
+									name: "companies",
+									axisYType: "secondary",
+									color: "#014D65",
+									dataPoints: [
+										{ y: 59060, label: "Colombo" },
+										{ y: 42140, label: "Gmpaha" },
+										{ y: 26620, label: "Kalutara" },
+										{ y: 12765, label: "Kandy" },
+										{ y: 10365, label: "Galle" },
+										{ y: 9832, label: "Ratnapura" },
+										{ y: 5876, label: "Matara" },
+										{ y: 4881, label: "Matale" },
+										{ y: 6331, label: "Nuwara Eliya" },
+										{ y: 4451, label: "Kegalle" },
+										{ y: 4535, label: "Jaffna" },
+										{ y: 4702, label: "Badulla" },
+										{ y: 3959, label: "Puttalam" },
+										{ y: 3375, label: "Anurathapura" },
+										{ y: 2910, label: "Hambanthota" },
+										{ y: 2697, label: "Trinco" },
+										{ y: 2421, label: "Monaragale" },
+										{ y: 2030, label: "Polanaruwa" },
+										{ y: 1625, label: "Ampara" },
+										{ y: 1719, label: "Kalmunai" },
+										{ y: 2147, label: "Batticolo" },
+										{ y: 1341, label: "Vavuniya" },
+										{ y: 984, label: "Mullaithivu" },
+										{ y: 1149, label: "Kilinochi" },
+										{ y: 724, label: "Mannar" }
+									]
+								}]
+							});
+							chart.render();
+							}
+                            </script>
+							<div id="chartContainer" style="height: 400px; width: 200%;"></div>
+                             <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+					</article>
+					<div class="row">
+					<article class="col-lg-6">
+						<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+						<script type="text/javascript">
+						// Load google charts
+						google.charts.load('current', {'packages':['corechart']});
+						google.charts.setOnLoadCallback(drawChart);
+
+						// Draw the chart and set the chart values
+						function drawChart() {
+						var data = google.visualization.arrayToDataTable([
+						['VACCINATION', '2ND DOSE'],
+						['Covishield Vaccine', 372290],
+						['Sinopharm Vaccine ', 455592],
+						['Sputnik V', 14301]
+						]);
+
+						// Optional; add a title and set the width and height of the chart
+						var options = {'title':'Vacinated', 'width':950, 'height':800};
+
+						// Display the chart inside the <div> element with id="piechart"
+						var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+						chart.draw(data, options);
+						}
+						</script>
+						<div id="piechart" style="width: 1000px; height: 750px;"></div>
+					</div>
+					</article>
+				    <article>
+			        </article>
+				</div>
+			</div>
+			<div class="tm-container-inner tm-featured-image">
+				<div class="row">
+					<div class="col-12">
+						<div class="placeholder-2">
+							<div class="parallax-window-2" data-parallax="scroll" data-image-src="img/img.jpg"></div>		
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tm-container-inner tm-features">
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="tm-feature">
+							<h4>Symtom</h4>
+							<p class="tm-feature-description">Most people who are infected with the SARS-CoV-2 virus have respiratory symptoms. They start to feel a little bit unwell, they will have a fever, they may have a cough or a sore throat or sneeze. In some individuals, they may have gastrointestinal symptoms.</p>
+							
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="tm-feature">
+							<h4>Prevention</h4>
+							<p class="tm-feature-description">Clean your hands often. Use soap and water, or an alcohol-based hand rub ,Maintain a safe distance from anyone who is coughing or sneezing,Wear a mask when physical distancing is not possible,Don’t touch your eyes, nose or mouth.</p>
+							
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="tm-feature">
+							<h4>Vaccine</h4>
+							<p class="tm-feature-description">COVID-19 vaccines also help keep you from getting seriously ill even if you do get COVID-19. Getting vaccinated yourself may also protect people around you, particularly people at increased risk for severe illness from COVID-19</p>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="tm-footer text-center">
+			<p>Copyright &copy; 2020 Piruthuvi Baskaran </p>
+		</footer>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/parallax.min.js"></script>
+</body>
+</html>
